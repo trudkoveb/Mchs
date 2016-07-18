@@ -1,0 +1,327 @@
+
+$font: 'Open Sans', sans-serif;
+$center: center;
+
+body{
+    font-family: $font;
+    color: #0a0a0a;
+    h2{
+        font-size: 30px;
+        text-align: $center;
+        margin-top: 120px;
+        padding: 0 25%;
+        position: relative;
+    }
+    .info h2:after, .info h2:before, .preparation h2:after, .preparation h2:before{
+        width: 25%;
+    }
+    .info h2:before, .preparation h2:before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 20%;
+        border-top: 1px solid #111;
+    }
+    .info h2:after, .preparation h2:after{
+        content: '';
+        display: block;
+        border-top: 1px solid #111;
+        top: 20%;
+        right: 0%;
+        position: absolute;
+    }
+    li{
+        font-size: 14px;
+    }
+    .info{
+        h2{
+            padding-bottom: 114px;
+        }
+        ul{
+            list-style: none;
+            margin-left: 0;
+            li{
+                margin-bottom: 58px;
+                position: relative;
+                padding-left: 59px;
+            }
+            li:first-child:after{
+                content: "";
+                display: block;
+                width: 24px;
+                height: 33px;
+                background-image: url("../img/icon-info-fire-extinguisher.png");
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            li:nth-child(2):after{
+                content: "";
+                display: block;
+                width: 27px;
+                height: 29px;
+                background-image: url("../img/icon-info-wallet.png");
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            li:nth-child(3):after{
+                content: "";
+                display: block;
+                width: 31px;
+                height: 35px;
+                background-image: url("../img/icon-info-medal.png");
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            li:nth-child(4):after{
+                content: "";
+                display: block;
+                width: 28px;
+                height: 29px;
+                background-image: url("../img/icon-info-list.png");
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        >div:last-child{
+            text-align: center;
+        }
+    }
+    .steps{
+        h2{
+            padding-bottom: 93px;
+        }
+        ul{
+            text-align: center;
+            li{
+                display: inline-block;
+                vertical-align: top;
+                width: 15%;
+                margin-right: 4%;
+                padding-left: 2%;
+                position: relative;
+                text-align: left;
+            }
+            li:nth-child(4){
+                font-weight: bold;
+            }
+            li:after{
+                display: block;
+                position: absolute;
+                top: -20px;
+                left: -5px;
+                font-weight: 300;
+                font-size: 39px;
+                color: #2a2a68;
+            }
+            li:first-child:after{
+                content: "1";
+            }
+            li:nth-child(2):after{
+                content: "2";
+            }
+            li:nth-child(3):after{
+                content: "3";
+            }
+            li:nth-child(4):after{
+                content: "4";
+            }
+            li:nth-child(5):after{
+                content: "5";
+            }
+            li:before{
+                content: "";
+                display: block;
+                background-image: url("../img/icon-slash.png");
+                width: 16px;
+                height: 21px;
+                position: absolute;
+                top: 0;
+                left: -55px;
+            }
+            li:first-child:before{
+                display: none;
+            }
+        }
+    }
+    .preparation{
+        h2{
+            padding-bottom: 84px;
+        }
+        ul{
+            text-align: center;
+            li{
+                display: inline-block;
+                vertical-align: top;
+                width: 33%;
+            }
+        }
+        p{
+            font-size: 14px;
+            color: #2a2a68;
+        }
+        img{
+            margin-bottom: 36px;
+        }
+    }
+    .work-list{
+        h2{
+            padding-bottom: 68px;
+        }
+        ul{
+            margin-bottom: 100px;
+            list-style: none;
+            li{
+                margin-bottom: 25px;
+                position: relative;
+                padding: 0 50px;
+            }
+            li:after{
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 15px;
+                color: #2a2a68;
+                font-size: 14px;
+            }
+        }
+        >div:nth-of-type(1){
+            ul{
+                li:first-child:after{
+                    content: "1.";
+                }
+                li:nth-child(2):after{
+                    content: "2.";
+                }
+                li:nth-child(3):after{
+                    content: "3.";
+                }
+                li:nth-child(4):after{
+                    content: "4.";
+                }
+                li:nth-child(5):after{
+                    content: "5.";
+                }
+            }
+        }
+        >div:nth-of-type(2){
+            ul{
+                li:first-child:after{
+                    content: "6.";
+                }
+                li:nth-child(2):after{
+                    content: "7.";
+                }
+                li:nth-child(3):after{
+                    content: "8.";
+                }
+                li:nth-child(4):after{
+                    content: "9.";
+                }
+                li:nth-child(5):after{
+                    content: "10.";
+                    }li:nth-child(6):after{
+                        content: "11.";
+                    }
+                }
+            }
+            p{
+                font-weight: 600;
+                color: #02094f;
+                font-size: 24px;
+                text-align: $center;
+                margin-bottom: 100px;
+            }
+        }
+    }
+
+    @media (max-width: 640px){
+        body{
+            h2{
+                padding: 0;
+                margin-top: 40px;
+            }
+            .info h2:before, .preparation h2:before, .info h2:after, .preparation h2:after{
+                display: none;
+            }
+            .steps{
+                ul{
+                    li{
+                        display: block;
+                        width: 100%;
+                        padding-left: 30px;
+                        margin-bottom: 25px;
+                    }
+                    li:nth-child(2):after{
+                        // top: -10px;
+                    }
+                    li:before{
+                        display: none;
+                    }
+                }
+            }
+            .preparation{
+                ul{
+                    margin-left: 0;
+                    li{
+                        display: block;
+                        width: 100%;
+                        margin-bottom: 60px;
+                    }
+                }
+                img{
+                    margin-bottom: 10px;
+                }
+            }
+            .work-list{
+                >div:nth-of-type(1){
+                    ul{
+                        margin-bottom: 0;
+                        li{
+                            padding-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 641px) and (max-width: 1022px){
+        body{
+            .steps{}
+        }
+    }
+
+    @media (min-width: 641px) and (max-width: 1100px){
+        body{
+            .steps{
+                ul{
+                    li:before{
+                        display: none;
+                    }
+                    li:after{
+                        left: -10px;
+                    }
+                }
+            }
+            .preparation{
+                ul{
+                    li{
+                        width: 49%;
+                    }
+                    li:nth-child(3){
+                        margin-top: 40px;
+                    }
+                }
+            }
+            .work-list{
+                >div:nth-of-type(1)
+                ul{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
